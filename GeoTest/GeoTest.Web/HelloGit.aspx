@@ -10,6 +10,11 @@
     <form id="form1" runat="server">
     <div>
         <h1>Hello Git!</h1>
+        <asp:Repeater runat="server" ID="rptMessages">
+            <ItemTemplate>
+                <asp:Literal runat="server" ID="litMessage"></asp:Literal><br/>
+            </ItemTemplate>
+        </asp:Repeater>
     </div>
     </form>
 </body>
